@@ -1,0 +1,3977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Apex Build | Premium Engineering & Construction Services</title>
+  <meta name="description" content="Apex Build is an award-winning premium construction and architecture company with 15+ years of experience. We deliver luxury residential, commercial, and industrial structures with uncompromised quality and safety.">
+  <meta name="keywords" content="construction company, residential builder, commercial construction, architecture, interior design, renovation, civil engineering, project management, luxury villa builders">
+  <meta name="author" content="Apex Build">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apexbuild.com/">
+  <meta property="og:title" content="Apex Build | Premium Engineering & Construction Services">
+  <meta property="og:description" content="Award-winning construction and architecture company with 15+ years of experience. Designing & building premium commercial & residential structures.">
+  <meta property="og:image" content="assets/images/hero_bg.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://apexbuild.com/">
+  <meta property="twitter:title" content="Apex Build | Premium Engineering & Construction Services">
+  <meta property="twitter:description" content="Award-winning construction and architecture company with 15+ years of experience. Designing & building premium commercial & residential structures.">
+  <meta property="twitter:image" content="assets/images/hero_bg.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+
+  <!-- Google Fonts: Outfit (For Headings) & Inter (For Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Premium Corporate Stylesheet (Inline CSS) -->
+  <style>
+    /* ==========================================================================
+       Apex Build Premium Design System Stylesheet
+       ========================================================================== */
+
+    :root {
+      /* Brand Palette */
+      --primary: #FFC107;         /* Warm amber yellow */
+      --primary-dark: #E0A800;    /* Darker shade of yellow for hover */
+      --dark: #151515;            /* Deep obsidian dark */
+      --secondary-dark: #212121;  /* Soft charcoal dark */
+      --gray-dark: #424242;       /* Slate body text dark */
+      --gray-medium: #757575;     /* Muted metadata grey */
+      --gray-light: #EEEEEE;      /* Border grey */
+      --light: #F8F9FA;           /* Light grey backgrounds */
+      --white: #FFFFFF;
+      --success: #2E7D32;         /* Accent green for form success */
+      --error: #D32F2F;           /* Accent red for validation errors */
+
+      /* Glassmorphism Presets */
+      --glass-bg: rgba(21, 21, 21, 0.75);
+      --glass-bg-light: rgba(255, 255, 255, 0.85);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --glass-border-dark: rgba(33, 33, 33, 0.08);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      --glass-shadow-light: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+      
+      /* Fonts */
+      --font-primary: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      
+      /* Transitions & Animation Timings */
+      --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: all 0.2s ease;
+      
+      /* Layout Settings */
+      --header-height: 80px;
+      --topbar-height: 40px;
+    }
+
+    /* Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-secondary);
+      color: var(--gray-dark);
+      background-color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Typography Scale */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-primary);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.25;
+    }
+
+    h1 { font-size: 2.75rem; font-weight: 900; letter-spacing: -0.02em; }
+    h2 { font-size: 2.25rem; font-weight: 800; letter-spacing: -0.01em; }
+    h3 { font-size: 1.5rem; font-weight: 700; }
+    h4 { font-size: 1.25rem; }
+    p { margin-bottom: 1rem; }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-fast);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    /* Utility Classes */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .py-large { padding: 80px 0; }
+    .py-medium { padding: 40px 0; }
+    .mt-medium { margin-top: 40px; }
+    .section-bg { background-color: var(--light); }
+
+    .text-center { text-align: center; }
+    .hide-mobile { display: none; }
+
+    .section-header {
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+    }
+
+    .section-tagline {
+      font-family: var(--font-primary);
+      color: var(--primary-dark);
+      font-size: 0.875rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      margin-bottom: 16px;
+      font-size: 2.25rem;
+    }
+
+    .section-subtitle {
+      color: var(--gray-medium);
+      font-size: 1.125rem;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      background: var(--primary);
+      color: var(--dark);
+      padding: 12px 24px;
+      font-weight: bold;
+      z-index: 9999;
+      transition: var(--transition-fast);
+    }
+    .skip-link:focus { top: 0; }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: var(--dark);
+    }
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--white);
+      color: var(--white);
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background-color: var(--white);
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-yellow {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      box-shadow: none;
+    }
+    .btn-outline-yellow:hover {
+      background-color: var(--primary);
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-text {
+      display: inline-flex;
+      align-items: center;
+      font-family: var(--font-primary);
+      font-weight: 700;
+      color: var(--dark);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .btn-text:hover { color: var(--primary-dark); }
+    .btn-arrow { width: 18px; height: 18px; margin-left: 6px; transition: var(--transition-fast); }
+    .btn-text:hover .btn-arrow { transform: translateX(4px); }
+
+    /* Loading Screen / Preloader */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--dark);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+
+    .preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .preloader-logo-wrapper {
+      margin-bottom: 24px;
+      animation: logoPulse 2s infinite ease-in-out;
+    }
+
+    .preloader-bar {
+      width: 200px;
+      height: 3px;
+      background-color: var(--secondary-dark);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .preloader-progress {
+      width: 0;
+      height: 100%;
+      background-color: var(--primary);
+      animation: preloaderFill 2s infinite linear;
+    }
+
+    @keyframes logoPulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.03); opacity: 1; }
+    }
+
+    @keyframes preloaderFill {
+      0% { width: 0; }
+      50% { width: 70%; }
+      100% { width: 100%; }
+    }
+
+    /* Navigation Header */
+    .top-bar {
+      height: var(--topbar-height);
+      background-color: var(--dark);
+      border-bottom: 1px solid var(--secondary-dark);
+      font-size: 0.8125rem;
+      color: var(--gray-medium);
+      display: flex;
+      align-items: center;
+    }
+
+    .top-bar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .top-info {
+      display: flex;
+      gap: 20px;
+    }
+
+    .info-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .info-icon {
+      width: 14px;
+      height: 14px;
+      color: var(--primary);
+    }
+
+    .info-link:hover { color: var(--white); }
+
+    .top-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-link {
+      color: var(--gray-medium);
+      display: flex;
+      align-items: center;
+    }
+    .social-link:hover { color: var(--primary); }
+    .social-icon { width: 16px; height: 16px; }
+
+    /* Sticky Main Header */
+    .main-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      background-color: var(--dark);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      transition: var(--transition-smooth);
+    }
+
+    /* Styles applied when navbar is sticky (scrolled) */
+    .main-header.scrolled {
+      height: 70px;
+      background-color: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--glass-border);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .scroll-progress-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      pointer-events: none;
+    }
+
+    .scroll-progress-bar {
+      width: 0%;
+      height: 100%;
+      background-color: var(--primary);
+      transition: width 0.1s ease-out;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+    }
+
+    /* Navigation Links (Desktop) */
+    .desktop-nav {
+      display: none;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      letter-spacing: 0.02em;
+      color: var(--white);
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-link:hover { color: var(--primary); }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--primary);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+    .nav-link.active { color: var(--primary); }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-quote-header {
+      display: none;
+    }
+
+    /* Burger Toggle Button */
+    .menu-toggle {
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hamburger {
+      position: relative;
+      width: 24px;
+      height: 2px;
+      background-color: var(--white);
+      transition: var(--transition-fast);
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background-color: var(--white);
+      left: 0;
+      transition: var(--transition-fast);
+    }
+
+    .hamburger::before { top: -8px; }
+    .hamburger::after { bottom: -8px; }
+
+    /* Hamburger open state */
+    .menu-toggle[aria-expanded="true"] .hamburger {
+      background-color: transparent;
+    }
+    .menu-toggle[aria-expanded="true"] .hamburger::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    .menu-toggle[aria-expanded="true"] .hamburger::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+
+    /* Slide-out Mobile Navigation Overlay */
+    .mobile-menu {
+      position: fixed;
+      top: var(--header-height);
+      right: -100%;
+      width: 100%;
+      height: calc(100vh - var(--header-height));
+      background-color: var(--dark);
+      transition: var(--transition-smooth);
+      padding: 40px 24px;
+      display: flex;
+      flex-direction: column;
+      z-index: 998;
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      right: 0;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-primary);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      display: block;
+    }
+    .mobile-nav-link:hover,
+    .mobile-nav-link.active {
+      color: var(--primary);
+    }
+
+    .mobile-menu-footer {
+      margin-top: auto;
+      border-top: 1px solid var(--secondary-dark);
+      padding-top: 24px;
+    }
+
+    .mobile-contact-info {
+      margin-top: 24px;
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+    }
+    .mobile-contact-info p {
+      margin-bottom: 4px;
+    }
+
+    main {
+      margin-top: var(--header-height);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: calc(100vh - var(--header-height));
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-primary);
+      font-size: 0.9375rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      color: var(--primary);
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .hero-title {
+      color: var(--white);
+      margin-bottom: 24px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .hero-description {
+      color: var(--gray-light);
+      font-size: 1.1rem;
+      margin-bottom: 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-actions .btn {
+      padding: 16px 36px;
+    }
+
+    .hero-scaffold-overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 193, 7, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Highlights Section */
+    .highlights-section {
+      background-color: var(--dark);
+      color: var(--white);
+      border-bottom: 2px solid var(--secondary-dark);
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 15px;
+    }
+
+    .highlight-card {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .highlight-number {
+      font-family: var(--font-primary);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .highlight-label {
+      color: var(--gray-light);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Why Choose Us Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .feature-card {
+      background-color: var(--white);
+      padding: 30px;
+      border-radius: 4px;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: var(--transition-smooth);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-icon-wrapper {
+      width: 50px;
+      height: 50px;
+      background-color: var(--light);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transition: var(--transition-fast);
+    }
+
+    .feature-card:hover .feature-icon-wrapper {
+      background-color: var(--primary);
+    }
+
+    .feature-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--dark);
+    }
+
+    .feature-title {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    .feature-desc {
+      color: var(--gray-medium);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* About Us Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+
+    .about-visuals {
+      position: relative;
+    }
+
+    .about-image-wrapper {
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .about-main-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .about-image-wrapper:hover .about-main-img {
+      transform: scale(1.03);
+    }
+
+    .experience-badge-glass {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: var(--glass-shadow);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .badge-num {
+      font-family: var(--font-primary);
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .badge-text {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .about-lead {
+      font-size: 1.15rem;
+      color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .about-desc {
+      color: var(--gray-medium);
+      margin-bottom: 30px;
+    }
+
+    .about-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pillar-card {
+      background-color: var(--light);
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    .pillar-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pillar-icon {
+      font-size: 1.5rem;
+    }
+
+    .pillar-title {
+      font-size: 1.125rem;
+    }
+
+    .pillar-body {
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 0;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto 0 auto;
+      padding: 20px 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: var(--gray-light);
+      top: 0;
+      bottom: 0;
+      left: 20px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 50px;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      border: 3px solid var(--white);
+      left: 14px;
+      top: 15px;
+      z-index: 1;
+      box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.2);
+    }
+
+    .timeline-content-panel {
+      background-color: var(--light);
+      padding: 24px;
+      border-radius: 4px;
+      border: 1px solid var(--gray-light);
+    }
+
+    .timeline-year {
+      font-family: var(--font-primary);
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item-title {
+      font-size: 1.125rem;
+      margin-bottom: 8px;
+    }
+
+    .timeline-content-panel p {
+      color: var(--gray-medium);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    /* Accreditations */
+    .subtitle-bold {
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+
+    .badges-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .badge-item {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--white);
+      border: 1px solid var(--gray-light);
+      border-radius: 4px;
+      transition: var(--transition-fast);
+    }
+    .badge-item:hover {
+      border-color: var(--primary);
+    }
+
+    .badge-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .badge-name {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .badge-authority {
+      font-size: 0.75rem;
+      color: var(--gray-medium);
+      text-transform: uppercase;
+    }
+
+    /* Services Section */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .service-card {
+      background-color: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: var(--transition-smooth);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .service-image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .service-card:hover .service-img {
+      transform: scale(1.05);
+    }
+
+    .service-tag {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: var(--primary);
+      color: var(--dark);
+      font-family: var(--font-primary);
+      font-weight: 800;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 6px 12px;
+      border-radius: 2px;
+    }
+
+    .service-body {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-title {
+      margin-bottom: 12px;
+    }
+
+    .service-desc {
+      color: var(--gray-medium);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .service-drawer {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 30px;
+      transition: var(--transition-smooth);
+      z-index: 5;
+      overflow-y: auto;
+    }
+
+    .service-drawer.active {
+      bottom: 0;
+    }
+
+    .drawer-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 2rem;
+      color: var(--gray-medium);
+      cursor: pointer;
+      line-height: 1;
+    }
+    .drawer-close:hover { color: var(--primary); }
+
+    .drawer-title {
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-right: 20px;
+    }
+
+    .service-drawer p {
+      font-size: 0.85rem;
+      color: var(--gray-light);
+      margin-bottom: 16px;
+    }
+
+    .service-drawer ul {
+      list-style: none;
+      margin-bottom: 0;
+    }
+
+    .service-drawer li {
+      font-size: 0.85rem;
+      color: var(--white);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-drawer li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    /* Projects Section */
+    .filter-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background-color: var(--light);
+      color: var(--dark);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .filter-btn:hover { background-color: var(--gray-light); }
+    .filter-btn.active {
+      background-color: var(--primary);
+      color: var(--dark);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .project-card {
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      aspect-ratio: 4 / 3;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      display: block;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .project-card.hide {
+      display: none;
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    .project-image-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .project-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(21, 21, 21, 0.95) 0%, rgba(21, 21, 21, 0.2) 80%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 30px;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.05);
+    }
+
+    .project-tag {
+      color: var(--primary);
+      font-family: var(--font-primary);
+      font-weight: 800;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .project-card-title {
+      color: var(--white);
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    .btn-view-details {
+      font-family: var(--font-primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-view-details::after {
+      content: '→';
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover .btn-view-details::after {
+      transform: translateX(4px);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 15, 15, 0.9);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .lightbox-container {
+      position: relative;
+      background-color: var(--white);
+      width: 90%;
+      max-width: 1000px;
+      max-height: 90vh;
+      border-radius: 4px;
+      z-index: 1001;
+      overflow-y: auto;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      display: block;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 2.5rem;
+      color: var(--white);
+      cursor: pointer;
+      z-index: 1002;
+      transition: var(--transition-fast);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .lightbox-close:hover { color: var(--primary); }
+
+    .lightbox-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .lightbox-img-wrapper {
+      background-color: var(--dark);
+      position: relative;
+    }
+
+    .lightbox-img {
+      width: 100%;
+      max-height: 45vh;
+      object-fit: cover;
+    }
+
+    .lightbox-details-wrapper {
+      padding: 30px;
+    }
+
+    .detail-tag {
+      color: var(--primary-dark);
+      font-family: var(--font-primary);
+      font-weight: 800;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .detail-project-title {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    .detail-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      border-top: 1px solid var(--gray-light);
+      border-bottom: 1px solid var(--gray-light);
+      padding: 16px 0;
+      margin-bottom: 24px;
+    }
+
+    .spec-item {
+      font-size: 0.875rem;
+      color: var(--gray-medium);
+    }
+    .spec-item strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+
+    .detail-desc-block h4 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .detail-desc-block p {
+      color: var(--gray-medium);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    /* Team Section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .team-card {
+      background-color: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+      transition: var(--transition-smooth);
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .team-image-wrapper {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+    }
+
+    .team-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+    .team-card:hover .team-img {
+      transform: scale(1.03);
+    }
+
+    .team-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(21, 21, 21, 0.4);
+      opacity: 0;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .team-card:hover .team-overlay { opacity: 1; }
+
+    .team-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .team-social-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--white);
+      transition: var(--transition-fast);
+    }
+    .team-social-icon:hover { color: var(--primary); }
+
+    .team-body {
+      padding: 24px;
+    }
+
+    .team-name {
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
+    .team-position {
+      color: var(--primary-dark);
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .team-meta {
+      border-top: 1px solid var(--gray-light);
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--gray-medium);
+    }
+
+    /* Testimonials Section */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      background-color: var(--white);
+      padding: 30px;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      border-top: 3px solid var(--primary);
+      transition: var(--transition-smooth);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    }
+
+    .testimonial-rating {
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      color: var(--dark);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-avatar {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .author-name {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .author-company {
+      font-size: 0.75rem;
+      color: var(--gray-medium);
+    }
+
+    .achievements-bar {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .achievement-metric {
+      padding: 10px 0;
+    }
+
+    .metric-val {
+      display: block;
+      font-family: var(--font-primary);
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .metric-lbl {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gray-medium);
+    }
+
+    .cta-banner {
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      color: var(--white);
+      text-align: center;
+    }
+
+    .cta-title {
+      color: var(--white);
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-desc {
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+      color: var(--gray-light);
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .cta-btn-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .contact-info-panel {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 40px 30px;
+      border-radius: 4px;
+    }
+
+    .panel-title {
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--secondary-dark);
+      padding-bottom: 12px;
+    }
+
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .info-block {
+      display: flex;
+      gap: 20px;
+    }
+
+    .block-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .block-text h4 {
+      color: var(--white);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    .block-text p {
+      color: var(--gray-medium);
+      font-size: 0.9rem;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+    .block-text a:hover { color: var(--primary); }
+
+    .quick-action-buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .btn-action-call,
+    .btn-action-whatsapp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 10px;
+      border-radius: 4px;
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .btn-action-call { background-color: var(--primary-dark); color: var(--dark); }
+    .btn-action-call:hover { background-color: var(--primary); transform: translateY(-2px); }
+
+    .btn-action-whatsapp { background-color: #25D366; }
+    .btn-action-whatsapp:hover { background-color: #20BA5A; transform: translateY(-2px); }
+
+    .action-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Contact Form */
+    .contact-form-panel {
+      background-color: var(--white);
+      padding: 40px 30px;
+      border-radius: 4px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--gray-light);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* Floating Labels */
+    .input-group {
+      position: relative;
+      width: 100%;
+    }
+
+    .input-group input,
+    .input-group textarea,
+    .input-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid var(--gray-light);
+      border-radius: 4px;
+      background-color: var(--light);
+      font-size: 0.95rem;
+      transition: var(--transition-fast);
+    }
+
+    .input-group textarea {
+      resize: vertical;
+    }
+
+    .input-group label {
+      position: absolute;
+      left: 16px;
+      top: 14px;
+      color: var(--gray-medium);
+      font-size: 0.95rem;
+      pointer-events: none;
+      transition: var(--transition-fast);
+      background-color: transparent;
+    }
+
+    .input-group input:focus ~ label,
+    .input-group input:not(:placeholder-shown) ~ label,
+    .input-group textarea:focus ~ label,
+    .input-group textarea:not(:placeholder-shown) ~ label {
+      top: -8px;
+      left: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0 6px;
+      background-color: var(--white);
+      color: var(--primary-dark);
+    }
+
+    .input-group select {
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+
+    .input-group select:focus ~ .select-label,
+    .input-group select:valid ~ .select-label {
+      top: -8px;
+      left: 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0 6px;
+      background-color: var(--white);
+      color: var(--primary-dark);
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus,
+    .input-group select:focus {
+      border-color: var(--primary-dark);
+      background-color: var(--white);
+      box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    }
+
+    .input-group.invalid input,
+    .input-group.invalid textarea,
+    .input-group.invalid select {
+      border-color: var(--error);
+      background-color: rgba(211, 47, 47, 0.02);
+    }
+
+    .input-group.invalid label {
+      color: var(--error);
+    }
+
+    .error-msg {
+      position: absolute;
+      bottom: -18px;
+      left: 4px;
+      font-size: 0.7rem;
+      color: var(--error);
+      display: none;
+    }
+
+    .input-group.invalid .error-msg {
+      display: block;
+    }
+
+    .form-submit-wrapper {
+      margin-top: 10px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      position: relative;
+    }
+
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(21, 21, 21, 0.1);
+      border-top-color: var(--dark);
+      border-radius: 50%;
+      animation: spinnerAnimation 0.6s infinite linear;
+      display: none;
+      margin-left: 10px;
+    }
+
+    @keyframes spinnerAnimation {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .btn-submit.loading span {
+      display: none;
+    }
+    .btn-submit.loading .spinner {
+      display: inline-block;
+    }
+
+    .map-container-card {
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.03);
+      border: 1px solid var(--gray-light);
+    }
+
+    .map-card-header {
+      background-color: var(--light);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--gray-light);
+    }
+
+    .map-card-header h4 {
+      font-size: 0.95rem;
+    }
+
+    .map-icon { font-size: 1.1rem; }
+
+    /* Quote Modal */
+    .quote-modal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1005;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .quote-modal-container.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .quote-modal-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 15, 15, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .quote-modal-content {
+      position: relative;
+      background-color: var(--white);
+      width: 90%;
+      max-width: 500px;
+      padding: 40px 30px;
+      border-radius: 4px;
+      z-index: 1006;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .quote-modal-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 2rem;
+      color: var(--gray-medium);
+      cursor: pointer;
+      line-height: 1;
+    }
+    .quote-modal-close:hover { color: var(--primary-dark); }
+
+    .quote-modal-header {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .quote-modal-subtitle {
+      font-size: 0.9rem;
+      color: var(--gray-medium);
+      margin-bottom: 30px;
+    }
+
+    .quote-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .quote-form .input-group label {
+      background-color: var(--white);
+    }
+
+    /* Footer Section */
+    .main-footer {
+      background-color: var(--dark);
+      color: var(--gray-light);
+      border-top: 4px solid var(--primary);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 70px 24px;
+    }
+
+    .branding-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      height: 38px;
+      width: auto;
+    }
+
+    .footer-text {
+      color: var(--gray-medium);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-circle {
+      width: 38px;
+      height: 38px;
+      background-color: var(--secondary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-fast);
+    }
+    .social-circle:hover {
+      background-color: var(--primary);
+      color: var(--dark);
+      transform: translateY(-2px);
+    }
+
+    .footer-social-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    .footer-title {
+      color: var(--white);
+      font-size: 1.15rem;
+      margin-bottom: 24px;
+      position: relative;
+      font-weight: 700;
+    }
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background-color: var(--primary);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+      padding-left: 4px;
+    }
+
+    .contact-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-detail {
+      color: var(--gray-medium);
+    }
+
+    /* Sub-footer Copyright */
+    .sub-footer {
+      border-top: 1px solid var(--secondary-dark);
+      padding: 24px 0;
+      font-size: 0.8125rem;
+      color: var(--gray-medium);
+    }
+
+    .sub-footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .sub-footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .sub-link:hover { color: var(--primary); }
+
+    /* Toast Notifications */
+    .toast-success-card {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 1010;
+      background-color: var(--white);
+      color: var(--dark);
+      border-left: 4px solid var(--success);
+      border-radius: 4px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      width: calc(100% - 48px);
+      max-width: 400px;
+      padding: 20px;
+      transform: translateY(150px);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .toast-success-card.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toast-body {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .toast-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: rgba(46, 125, 50, 0.1);
+      color: var(--success);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .toast-text-wrapper h4 {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .toast-text-wrapper p {
+      font-size: 0.8rem;
+      color: var(--gray-medium);
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+
+    .toast-close {
+      font-size: 1.5rem;
+      color: var(--gray-medium);
+      cursor: pointer;
+      margin-left: auto;
+      line-height: 1;
+    }
+    .toast-close:hover { color: var(--dark); }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--dark);
+      color: var(--primary);
+      cursor: pointer;
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--secondary-dark);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .back-to-top.active {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .back-to-top:hover {
+      transform: scale(1.05);
+      background-color: var(--secondary-dark);
+    }
+
+    .progress-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotate(-90deg);
+    }
+
+    .progress-ring-circle {
+      stroke-dasharray: 138.23;
+      stroke-dashoffset: 138.23;
+      transition: stroke-dashoffset 0.1s ease-out;
+    }
+
+    .arrow-up {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    /* Scroll Reveal classes */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-scale {
+      transform: scale(0.9);
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .active .reveal-scale {
+      transform: scale(1);
+    }
+
+    /* Media Queries (Mobile First Breakpoints) */
+
+    @media (min-width: 576px) {
+      .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      .highlight-number { font-size: 3rem; }
+      
+      .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .sub-footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .hide-mobile { display: inline-flex; }
+      
+      h1 { font-size: 3.5rem; }
+      h2 { font-size: 2.75rem; }
+      
+      .section-title { font-size: 2.5rem; }
+      
+      .btn-quote-header { display: inline-flex; }
+      
+      .menu-toggle { display: none; } 
+      .desktop-nav { display: block; } 
+      
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+      
+      .experience-badge-glass {
+        left: auto;
+        right: -20px;
+        bottom: -20px;
+        width: 250px;
+      }
+      
+      .timeline::after {
+        left: 50%;
+        margin-left: -1px;
+      }
+      
+      .timeline-item {
+        width: 50%;
+        padding-left: 0;
+        margin-bottom: 50px;
+      }
+      
+      .timeline-item.left { left: 0; padding-right: 40px; }
+      .timeline-item.right { left: 50%; padding-left: 40px; }
+      
+      .timeline-item::after {
+        left: 50%;
+        margin-left: -7px;
+        top: 26px;
+      }
+      
+      .timeline-item.left::after {
+        left: 100%;
+      }
+      
+      .timeline-item.right::after {
+        left: 0;
+      }
+      
+      .achievements-bar {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+      }
+      .form-row {
+        flex-direction: row;
+      }
+      
+      .lightbox-img {
+        max-height: 90vh;
+      }
+    }
+
+    @media (min-width: 992px) {
+      h1 { font-size: 4rem; }
+      
+      .highlights-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      }
+      
+      .lightbox-grid {
+        grid-template-columns: 1.2fr 1fr;
+      }
+      
+      .badges-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container { padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading Animation / Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-logo-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="220" height="53">
+          <g transform="translate(10, 10)">
+            <path d="M 40 100 L 70 20 L 100 100" stroke="#FFC107" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 15 100 L 55 20 L 75 60" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <line x1="45" y1="80" x2="95" y2="80" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+            <line x1="55" y1="60" x2="85" y2="60" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <text x="130" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" letter-spacing="2">APEX</text>
+          <text x="250" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFC107" letter-spacing="2">BUILD</text>
+        </svg>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#home" class="skip-link">Skip to content</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-info">
+        <span class="info-item">
+          <svg class="info-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <a href="tel:+15551234567" class="info-link">+1 (555) 123-4567</a>
+        </span>
+        <span class="info-item">
+          <svg class="info-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <a href="mailto:info@apexbuild.com" class="info-link">info@apexbuild.com</a>
+        </span>
+        <span class="info-item hide-mobile">
+          <svg class="info-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.3L11 12.4V7h1.5v4.6l3.6 2.1-.8 1.6z"/></svg>
+          <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+        </span>
+      </div>
+      <div class="top-socials">
+        <a href="#" class="social-link" aria-label="Follow Apex Build on Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Follow Apex Build on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Follow Apex Build on Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header id="main-header" class="main-header">
+    <div class="scroll-progress-container">
+      <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+    </div>
+
+    <div class="container header-container">
+      <a href="#home" class="logo-link" aria-label="Apex Build Homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="180" height="43">
+          <g transform="translate(10, 10)">
+            <path d="M 40 100 L 70 20 L 100 100" stroke="#FFC107" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 15 100 L 55 20 L 75 60" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <line x1="45" y1="80" x2="95" y2="80" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+            <line x1="55" y1="60" x2="85" y2="60" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <text x="130" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" letter-spacing="2">APEX</text>
+          <text x="250" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFC107" letter-spacing="2">BUILD</text>
+        </svg>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Desktop navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#team" class="nav-link">Our Team</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary btn-quote-header modal-trigger" data-modal="quote-modal">Get Free Quote</button>
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Slide-out Mobile Navigation Menu -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#team" class="mobile-nav-link">Our Team</a></li>
+          <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+          <button class="btn btn-primary modal-trigger" data-modal="quote-modal" style="width: 100%;">Get Free Quote</button>
+          <div class="mobile-contact-info">
+            <p>+1 (555) 123-4567</p>
+            <p>info@apexbuild.com</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main id="main-content">
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section" style="background-image: linear-gradient(rgba(21, 21, 21, 0.75), rgba(21, 21, 21, 0.85)), url('assets/images/hero_bg.png');">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <span class="hero-subtitle">ENGINEERING THE FUTURE</span>
+          <h1 class="hero-title">Constructing Premium Structures, Shaping Visions</h1>
+          <p class="hero-description">We build commercial skyscrapers, luxury residential estates, and complex civil infrastructures with strict safety compliance, elite craftsmanship, and modern technology.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary modal-trigger" data-modal="quote-modal">Get Free Quote</button>
+            <a href="#projects" class="btn btn-outline">Our Projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scaffold-overlay" aria-hidden="true"></div>
+    </section>
+
+    <!-- 1.1 STAT COUNTERS SECTION -->
+    <section class="highlights-section py-large">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card reveal">
+            <div class="highlight-number"><span class="counter" data-target="15">0</span>+</div>
+            <div class="highlight-label">Years of Industry Experience</div>
+          </div>
+          <div class="highlight-card reveal" data-delay="100">
+            <div class="highlight-number"><span class="counter" data-target="500">0</span>+</div>
+            <div class="highlight-label">Successful Projects Completed</div>
+          </div>
+          <div class="highlight-card reveal" data-delay="200">
+            <div class="highlight-number"><span class="counter" data-target="200">0</span>+</div>
+            <div class="highlight-label">Happy Corporate &amp; Home Clients</div>
+          </div>
+          <div class="highlight-card reveal" data-delay="300">
+            <div class="highlight-number"><span class="counter" data-target="50">0</span>+</div>
+            <div class="highlight-label">In-House Expert Engineers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1.2 WHY CHOOSE US SECTION -->
+    <section class="why-choose-us py-large section-bg">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">OUR CORE EDGE</span>
+          <h2 class="section-title">Why Industry Leaders Choose Apex Build</h2>
+          <p class="section-subtitle">We merge architectural luxury with structural integrity, backed by rigorous quality standards and an experienced team of specialists.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            </div>
+            <h3 class="feature-title">Experienced Team</h3>
+            <p class="feature-desc">Our design-builders and civil engineers possess extensive portfolios spanning luxury towers, villas, and industrial parks.</p>
+          </div>
+          
+          <div class="feature-card reveal" data-delay="100">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <h3 class="feature-title">Quality Construction</h3>
+            <p class="feature-desc">We implement high-grade raw concrete, premium steel fabrication, and multi-tier quality checks on every square foot.</p>
+          </div>
+
+          <div class="feature-card reveal" data-delay="200">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 1.21-1.04 2.01-2.9 2.01-2.06 0-2.87-.92-3-2.2H6.3c.06 2 1.37 3.5 3.5 4V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <h3 class="feature-title">Affordable Pricing</h3>
+            <p class="feature-desc">We offer transparent cost estimation and structural cost-engineering to optimize project budgets without sacrificing finish.</p>
+          </div>
+
+          <div class="feature-card reveal" data-delay="300">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 14.3L11 12.4V7h1.5v4.6l3.6 2.1-.8 1.6z"/></svg>
+            </div>
+            <h3 class="feature-title">On-Time Delivery</h3>
+            <p class="feature-desc">We employ advanced scheduling systems and strict monitoring to deliver key handovers exactly when agreed.</p>
+          </div>
+
+          <div class="feature-card reveal" data-delay="400">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M22 2H2v20h20V2zm-2 18H4V4h16v16zm-8-3l4-4h-3V7h-2v6H8l4 4z"/></svg>
+            </div>
+            <h3 class="feature-title">Modern Equipment</h3>
+            <p class="feature-desc">Our fleet features state-of-the-art heavy excavation, crane systems, concrete mixers, and 3D modeling technologies.</p>
+          </div>
+
+          <div class="feature-card reveal" data-delay="500">
+            <div class="feature-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="feature-icon"><path d="M12 2L1 21h22L12 2zm1 14h-2v-2h2v2zm0-4h-2V8h2v4z"/></svg>
+            </div>
+            <h3 class="feature-title">Safety Standards</h3>
+            <p class="feature-desc">We adhere strictly to OSHA compliance and sustain a stellar zero-accident site record through continuous training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section id="about" class="about-section py-large">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left side: Graphic elements -->
+          <div class="about-visuals reveal">
+            <div class="about-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" alt="Apex Build Construction Crew Working On Foundation" class="about-main-img" width="550" height="420" loading="lazy">
+              <div class="experience-badge-glass">
+                <span class="badge-num">15+</span>
+                <span class="badge-text">Years of Architectural &amp; Engineering Mastery</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right side: Text details -->
+          <div class="about-content reveal" data-delay="200">
+            <span class="section-tagline">DISCOVER APEX BUILD</span>
+            <h2 class="section-title">We Turn Complex Engineering Blueprints into Concrete Landmarks</h2>
+            <p class="about-lead">Founded in 2011, Apex Build has risen from a local boutique residential builder to a nationally recognized contractor executing multi-million dollar high-rises and complex civil structures.</p>
+            <p class="about-desc">Our approach focuses on sustainable construction materials, meticulous architectural detailing, and smart site management. We closely collaborate with architects, investors, and local authorities to secure smooth permitting and unmatched build quality.</p>
+            
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-header">
+                  <span class="pillar-icon">🎯</span>
+                  <h3 class="pillar-title">Our Mission</h3>
+                </div>
+                <p class="pillar-body">To deliver durable, cost-optimized, and aesthetically superior buildings through state-of-the-art construction processes while ensuring absolute worker and community safety.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-header">
+                  <span class="pillar-icon">👁️</span>
+                  <h3 class="pillar-title">Our Vision</h3>
+                </div>
+                <p class="pillar-body">To be the industry benchmark for sustainable construction in North America, pioneering smart eco-friendly buildings that reduce overall carbon footprint without compromising luxury.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.1 COMPANY TIMELINE -->
+        <div class="timeline-container py-large">
+          <div class="section-header text-center reveal">
+            <span class="section-tagline">OUR JOURNEY</span>
+            <h2 class="section-title">Milestones of Construction Excellence</h2>
+          </div>
+          
+          <div class="timeline">
+            <div class="timeline-item left reveal">
+              <div class="timeline-content-panel">
+                <span class="timeline-year">2011</span>
+                <h3 class="timeline-item-title">Foundation &amp; First Breaks</h3>
+                <p>Apex Build is founded with a crew of 5 engineers, focusing on custom luxury homes and light renovation works in the metro area.</p>
+              </div>
+            </div>
+            <div class="timeline-item right reveal" data-delay="100">
+              <div class="timeline-content-panel">
+                <span class="timeline-year">2015</span>
+                <h3 class="timeline-item-title">Expansion to Commercial Sector</h3>
+                <p>We secure our first master commercial retail park contract, expanding our in-house workforce and heavy machinery assets tenfold.</p>
+              </div>
+            </div>
+            <div class="timeline-item left reveal" data-delay="200">
+              <div class="timeline-content-panel">
+                <span class="timeline-year">2019</span>
+                <h3 class="timeline-item-title">Skyscraper Breakthrough</h3>
+                <p>Apex Build successfully commissions a 32-story luxury condominium tower, receiving national recognition for green-engineered foundations.</p>
+              </div>
+            </div>
+            <div class="timeline-item right reveal" data-delay="300">
+              <div class="timeline-content-panel">
+                <span class="timeline-year">2023</span>
+                <h3 class="timeline-item-title">Zero-Carbon Construction Pivot</h3>
+                <p>We incorporate smart building division and eco-friendly timber-hybrid frame options, pioneering carbon-neutral commercial zones.</p>
+              </div>
+            </div>
+            <div class="timeline-item left reveal" data-delay="400">
+              <div class="timeline-content-panel">
+                <span class="timeline-year">2026</span>
+                <h3 class="timeline-item-title">Modern Structural Leaders</h3>
+                <p>Over 500+ projects delivered. Operating as a premier tier-1 builder with state-of-the-art modular fabrication and VR client walkthroughs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.2 CERTIFICATIONS & AWARDS -->
+        <div class="certifications-awards section-bg p-medium reveal">
+          <h3 class="subtitle-bold text-center">Accredited Certifications &amp; Awards</h3>
+          <div class="badges-grid">
+            <div class="badge-item">
+              <div class="badge-icon">🎖️</div>
+              <h4 class="badge-name">LEED Gold Certified Builder</h4>
+              <p class="badge-authority">U.S. Green Building Council</p>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🛡️</div>
+              <h4 class="badge-name">OSHA Safety VPP Star</h4>
+              <p class="badge-authority">Safety Standards Excellence</p>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🏆</div>
+              <h4 class="badge-name">Best High-Rise Contractor</h4>
+              <p class="badge-authority">National Infrastructure Awards (2024)</p>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">📐</div>
+              <h4 class="badge-name">ISO 9001:2015 Quality</h4>
+              <p class="badge-authority">International Standards Org</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="services" class="services-section py-large section-bg">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">WHAT WE DO</span>
+          <h2 class="section-title">Complete Architecture, Civil, &amp; Build Capabilities</h2>
+          <p class="section-subtitle">From conceptual design blueprints to steel fabrication and final landscaping, we execute turn-key construction management.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card reveal">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Luxurious Residential Construction Project" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Residential</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Residential Construction</h3>
+              <p class="service-desc">Luxury modern estates, custom architectural villas, and premium multi-family housing complexes crafted to the highest finishes.</p>
+              <button class="btn-text learn-more-trigger" data-service="residential">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-residential">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Residential Construction Details</h4>
+              <p>We build luxury residential properties with high focus on customized engineering. Our services include planning, soil exploration, foundation design, framing, structural masonry, insulation, luxury waterproofing, interior fitting, and smart home pre-wiring.</p>
+              <ul>
+                <li>Custom Premium Mansions &amp; Villas</li>
+                <li>Sustainable Eco-Framing &amp; Concrete Pods</li>
+                <li>Advanced Acoustic &amp; Thermal Insulation</li>
+                <li>10-Year Structural Handover Guarantee</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card reveal" data-delay="100">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Modern Skyscraper Commercial Building" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Commercial</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Commercial Buildings</h3>
+              <p class="service-desc">Corporate offices, urban high-rises, retail complexes, and hotel towers optimized for structural energy efficiency and workspace flow.</p>
+              <button class="btn-text learn-more-trigger" data-service="commercial">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-commercial">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Commercial Buildings Details</h4>
+              <p>Apex Build handles large-scale commercial developments. We provide pre-construction cost modeling, structural steel fabrication, high-load glass facades, safety exit compliance, state-of-the-art HVAC integration, and customized interior office partitioning.</p>
+              <ul>
+                <li>Steel-Frame Office Skyscrapers</li>
+                <li>Reinforced Concrete Retail Centers</li>
+                <li>Acoustic Zoning &amp; Fire Suppression</li>
+                <li>LEED Energy Star Accreditation Audits</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card reveal" data-delay="200">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Heavy Industrial Construction Site" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Industrial</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Industrial Construction</h3>
+              <p class="service-desc">Advanced warehousing, cold storage systems, assembly plants, and manufacturing units that demand heavy floor-loading and high clearances.</p>
+              <button class="btn-text learn-more-trigger" data-service="industrial">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-industrial">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Industrial Construction Details</h4>
+              <p>Heavy industry requires durable structural engineering. We deliver heavy foundation excavation, reinforced concrete slabs with epoxy seals, crane rails, logistics bays, high-voltage panel routing, and custom steel roof spans.</p>
+              <ul>
+                <li>Smart Distribution &amp; Logistics Hubs</li>
+                <li>Heavy Machinery Foundations</li>
+                <li>Specialized Environmental Containment</li>
+                <li>High-Span Steel Portal Frames</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service-card reveal" data-delay="300">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Luxury Modern Interior Design and Fitout" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Interior</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Interior Design &amp; Fit-Out</h3>
+              <p class="service-desc">Bespoke luxury interior designs, custom millwork, ergonomic ceilings, and lighting layouts that elevate corporate and residential spaces.</p>
+              <button class="btn-text learn-more-trigger" data-service="interior">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-interior">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Interior Design Details</h4>
+              <p>Our premium interior fitout team works with premium stone, hardwoods, custom metals, and acoustic panels. We cover ceiling detailing, custom lighting layout, bespoke furniture integration, and fine finishing works.</p>
+              <ul>
+                <li>Executive Corporate Lounges &amp; Boardrooms</li>
+                <li>Luxury Marble &amp; Hardwood Installation</li>
+                <li>Custom Floating Ceilings with Integrated LEDs</li>
+                <li>Ergonomic Space-Planning &amp; Furnishing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service-card reveal">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=600&q=80" alt="Workers Renovating an Older Building Structure" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Renovation</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Renovation &amp; Retrofitting</h3>
+              <p class="service-desc">Structural strengthening, historic facade preservation, and modernizing older commercial or residential buildings to present safety codes.</p>
+              <button class="btn-text learn-more-trigger" data-service="renovation">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-renovation">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Renovation &amp; Retrofitting Details</h4>
+              <p>We revitalize older buildings. Our crew handles structural column reinforcement, seismological retrofitting, energy-efficient window/facade upgrades, concrete repairing, and electrical rewiring.</p>
+              <ul>
+                <li>Historic Building Preservation</li>
+                <li>Seismic Column &amp; Beam Retrofitting</li>
+                <li>HVAC &amp; Insulation Modernization</li>
+                <li>Interior and Facade Overhauls</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service-card reveal" data-delay="100">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Architectural Plan and Building Mockup Model" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Architecture</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Architecture &amp; Drafting</h3>
+              <p class="service-desc">Stunning conceptual design sketches, 3D renderings, and precise engineering blueprints that balance aesthetic beauty with code compliance.</p>
+              <button class="btn-text learn-more-trigger" data-service="architecture">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-architecture">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Architecture &amp; Drafting Details</h4>
+              <p>Apex Build bridges the gap between artistic vision and building realities. We utilize BIM (Building Information Modeling) and VR (Virtual Reality) walkthroughs to draft structural layouts, facade detailing, and local zoning approvals.</p>
+              <ul>
+                <li>Aesthetic &amp; Structural Feasibility Designs</li>
+                <li>3D VR Client Render Previews</li>
+                <li>BIM Coordination &amp; Space Optimization</li>
+                <li>Zoning, Code Compliance, &amp; Permit Processing</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="service-card reveal" data-delay="200">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80" alt="Engineers Inspecting Concrete Bridge Pillars" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Civil</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Civil Engineering</h3>
+              <p class="service-desc">Foundation piling, bridges, custom retaining walls, drainage grids, and municipal concrete systems engineered for extreme load conditions.</p>
+              <button class="btn-text learn-more-trigger" data-service="civil">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-civil">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Civil Engineering Details</h4>
+              <p>Our heavy civil division supports critical infrastructure works. We design deep soil piling, heavy retaining structures, high-performance storm drainage grids, and site earthworks grading.</p>
+              <ul>
+                <li>Deep Pier Piling &amp; Site Stabilization</li>
+                <li>Stormwater Management &amp; Drainage Grids</li>
+                <li>High-Load Retaining Walls &amp; Abutments</li>
+                <li>Municipal Infrastructure Partnership Projects</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="service-card reveal" data-delay="300">
+            <div class="service-image-container">
+              <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="Project Manager Reviewing Timelines and Blueprints" class="service-img" width="380" height="240" loading="lazy">
+              <div class="service-tag">Management</div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Project Management</h3>
+              <p class="service-desc">Turnkey construction supervision, procurement oversight, scheduling audit, sub-contractor control, and site safety management.</p>
+              <button class="btn-text learn-more-trigger" data-service="management">
+                Learn More 
+                <svg fill="currentColor" viewBox="0 0 24 24" class="btn-arrow"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </button>
+            </div>
+            <div class="service-drawer" id="drawer-management">
+              <button class="drawer-close" aria-label="Close details">&times;</button>
+              <h4 class="drawer-title">Project Management Details</h4>
+              <p>We take complete responsibility from zoning to handover. Our managers monitor material procurement pipelines, safety enforcement, budget variances, and stakeholder reports.</p>
+              <ul>
+                <li> Primavera P6 Critical Path Scheduling</li>
+                <li>Subcontractor Auditing &amp; Coordination</li>
+                <li>Detailed Cost Control &amp; Procurement Audits</li>
+                <li>OSHA Standard Site Safety Supervision</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS GALLERY SECTION -->
+    <section id="projects" class="projects-section py-large">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">OUR WORKS</span>
+          <h2 class="section-title">Portfolios of Structurally Sound Landmarks</h2>
+          <p class="section-subtitle">Browse through our major design-build residential estates, apartments, and corporate offices.</p>
+        </div>
+
+        <!-- Filter Tab Buttons -->
+        <div class="filter-wrapper reveal">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="houses">Houses</button>
+          <button class="filter-btn" data-filter="apartments">Apartments</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="villas">Villas</button>
+          <button class="filter-btn" data-filter="office-buildings">Office Buildings</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: House -->
+          <div class="project-card reveal" data-category="houses" data-id="1">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Oakwood Luxury Modern House Facade" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Houses</span>
+                <h3 class="project-card-title">Oakwood Modern House</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">The Oakwood Estate Trust</span>
+              <span class="detail-location">Los Angeles, California</span>
+              <span class="detail-budget">$2.4 Million</span>
+              <span class="detail-date">Completed Sept 2025</span>
+              <p class="detail-description">A luxurious custom residence featuring open-plan concrete architectural volumes, floor-to-ceiling glass paneling, smart automated solar energy systems, and an infinity pool structure engineered over a 20-degree hillside slope. High structural columns with custom seismic damping pads protect the structure against movements.</p>
+            </div>
+          </div>
+
+          <!-- Project 2: Apartments -->
+          <div class="project-card reveal" data-category="apartments" data-id="2" data-delay="100">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Apex Vista Modern Residential Apartments" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Apartments</span>
+                <h3 class="project-card-title">Apex Vista Apartments</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">Vista Development Corporation</span>
+              <span class="detail-location">Seattle, Washington</span>
+              <span class="detail-budget">$18.5 Million</span>
+              <span class="detail-date">Completed June 2024</span>
+              <p class="detail-description">A multi-family residential building complex comprising 75 luxury energy-efficient units. Our scope included structural steel-frame fabrication, deep pile foundations, acoustic floor insulation layers, integrated fire safety zones, and a rooftop garden with engineered rainwater collection drainage systems.</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Commercial -->
+          <div class="project-card reveal" data-category="commercial" data-id="3" data-delay="200">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Horizon Glass Corporate Tower" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Commercial</span>
+                <h3 class="project-card-title">Horizon Tower Complex</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">Horizon Properties Group</span>
+              <span class="detail-location">Austin, Texas</span>
+              <span class="detail-budget">$42 Million</span>
+              <span class="detail-date">Completed Dec 2025</span>
+              <p class="detail-description">A state-of-the-art 24-story glass facade corporate skyscraper. Apex Build served as the primary general contractor overseeing core excavation, structural composite metal deck framing, double-glazed soundproof curtain walls, intelligent elevator shaft systems, and complete mechanical/electrical systems installation.</p>
+            </div>
+          </div>
+
+          <!-- Project 4: Villas -->
+          <div class="project-card reveal" data-category="villas" data-id="4">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80" alt="Elysium Premium Waterfront Villa" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Villas</span>
+                <h3 class="project-card-title">Elysium Waterfront Villa</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">Private VIP Investor</span>
+              <span class="detail-location">Miami, Florida</span>
+              <span class="detail-budget">$5.2 Million</span>
+              <span class="detail-date">Completed March 2025</span>
+              <p class="detail-description">An elite beachfront villa designed using custom concrete cantilevers. Featuring structural resistance to coastal weather, double-barrier waterproofing membranes, bespoke natural stone tiling, a glass-bottomed pool, smart security gates, and landscape layouts integrating native flora.</p>
+            </div>
+          </div>
+
+          <!-- Project 5: Office Buildings -->
+          <div class="project-card reveal" data-category="office-buildings" data-id="5" data-delay="100">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Corporate Glass Office Atrium and Facade" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Office Buildings</span>
+                <h3 class="project-card-title">Nova Corporate Offices</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">Nova Technologies Inc.</span>
+              <span class="detail-location">Silicon Valley, California</span>
+              <span class="detail-budget">$29 Million</span>
+              <span class="detail-date">Completed Oct 2024</span>
+              <p class="detail-description">A low-rise corporate campus constructed with a timber-concrete hybrid structural system. This LEED Gold certified structure showcases open-concept work halls, solar-tracking roof panels, advanced greywater treatment installations, and floor-level temperature control zoning.</p>
+            </div>
+          </div>
+
+          <!-- Project 6: Houses -->
+          <div class="project-card reveal" data-category="houses" data-id="6" data-delay="200">
+            <div class="project-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Minimalist Architectural Concrete House" class="project-img" width="380" height="280" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-tag">Houses</span>
+                <h3 class="project-card-title">Stone &amp; Wood Minimalist House</h3>
+                <span class="btn-view-details">View Details</span>
+              </div>
+            </div>
+            <div class="project-detail-content" style="display:none;">
+              <span class="detail-client">The Sterling Family</span>
+              <span class="detail-location">Denver, Colorado</span>
+              <span class="detail-budget">$1.9 Million</span>
+              <span class="detail-date">Completed Aug 2025</span>
+              <p class="detail-description">A striking modern residential chalet combining local quarry stone with custom structural timber columns. High insulation values protect the living areas against freezing mountain winters, featuring low-E triple-glazed window panels and intelligent geothermal heating loops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. OUR TEAM SECTION -->
+    <section id="team" class="team-section py-large section-bg">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">EXPERT BUILDERS</span>
+          <h2 class="section-title">Leadership Behind Apex Build's Integrity</h2>
+          <p class="section-subtitle">Our in-house project directors, architects, and civil specialists represent decades of structural expertise.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card reveal">
+            <div class="team-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=500&q=80" alt="Marcus Vance - CEO of Apex Build" class="team-img" width="300" height="375" loading="lazy">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#" aria-label="LinkedIn profile of Marcus Vance">
+                    <svg class="team-social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Marcus Vance</h3>
+              <p class="team-position">Chief Executive Officer</p>
+              <div class="team-meta">
+                <span class="meta-item"><strong>Exp:</strong> 22 Years</span>
+                <span class="meta-item"><strong>Edu:</strong> MBA, M.S. Civil Eng.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card reveal" data-delay="100">
+            <div class="team-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=500&q=80" alt="Elena Rostova - Principal Architect" class="team-img" width="300" height="375" loading="lazy">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#" aria-label="LinkedIn profile of Elena Rostova">
+                    <svg class="team-social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Elena Rostova</h3>
+              <p class="team-position">Principal Architect</p>
+              <div class="team-meta">
+                <span class="meta-item"><strong>Exp:</strong> 16 Years</span>
+                <span class="meta-item"><strong>Edu:</strong> M.Arch, RIBA Member</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card reveal" data-delay="200">
+            <div class="team-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=500&q=80" alt="David Miller - Construction Project Director" class="team-img" width="300" height="375" loading="lazy">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#" aria-label="LinkedIn profile of David Miller">
+                    <svg class="team-social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">David Miller</h3>
+              <p class="team-position">Construction Project Director</p>
+              <div class="team-meta">
+                <span class="meta-item"><strong>Exp:</strong> 18 Years</span>
+                <span class="meta-item"><strong>Edu:</strong> B.S. Construction Mgt.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-card reveal" data-delay="300">
+            <div class="team-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=500&q=80" alt="Sarah Jenkins - Chief Safety Officer" class="team-img" width="300" height="375" loading="lazy">
+              <div class="team-overlay">
+                <div class="team-socials">
+                  <a href="#" aria-label="LinkedIn profile of Sarah Jenkins">
+                    <svg class="team-social-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Sarah Jenkins</h3>
+              <p class="team-position">Chief Safety Officer</p>
+              <div class="team-meta">
+                <span class="meta-item"><strong>Exp:</strong> 12 Years</span>
+                <span class="meta-item"><strong>Edu:</strong> Certified OSHA Auditor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section py-large">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">CLIENT VOICE</span>
+          <h2 class="section-title">Endorsements from Commercial &amp; Private Clients</h2>
+          <p class="section-subtitle">Read firsthand reviews from developer groups, luxury villa owners, and logistics clients.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-quote">"Apex Build exceeded our timeline expectations on the Seattle Vista development. Their construction management team handled the seismic foundation grading with absolute professionalism. We completed two weeks ahead of schedule."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80" alt="Arthur Pendelton - VP of Vista Developments" class="author-avatar" width="50" height="50" loading="lazy">
+              <div class="author-info">
+                <h4 class="author-name">Arthur Pendelton</h4>
+                <p class="author-company">VP, Vista Developments</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal" data-delay="150">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-quote">"Building a modern home on a steep cliff in LA seemed risky, but Apex Build's civil engineering team designed a structural system using concrete retaining walls that felt incredibly solid. Their transparency on cost engineering saved us over $150k."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&h=80&q=80" alt="Clarissa Sterling - Luxury Homeowner" class="author-avatar" width="50" height="50" loading="lazy">
+              <div class="author-info">
+                <h4 class="author-name">Clarissa Sterling</h4>
+                <p class="author-company">Residential Homeowner</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal" data-delay="300">
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-quote">"Apex Build executed our eco-friendly timber hybrid campus with gold-level green credentials. Their attention to insulation values, HVAC duct optimization, and low-waste staging made it the smoothest build we've ever sponsored."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" alt="Dr. Robert Chen - Chief Operations Director" class="author-avatar" width="50" height="50" loading="lazy">
+              <div class="author-info">
+                <h4 class="author-name">Dr. Robert Chen</h4>
+                <p class="author-company">Operations, Nova Tech Inc.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements-bar section-bg p-medium reveal mt-medium">
+          <div class="achievement-metric">
+            <span class="metric-val">100%</span>
+            <span class="metric-lbl">Safety Site Compliance</span>
+          </div>
+          <div class="achievement-metric">
+            <span class="metric-val">10-Yr</span>
+            <span class="metric-lbl">Structural Warranties</span>
+          </div>
+          <div class="achievement-metric">
+            <span class="metric-val">Zero</span>
+            <span class="metric-lbl">Cost Overruns Recorded</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner py-large" style="background-image: linear-gradient(rgba(33,33,33,0.85), rgba(21,21,21,0.95)), url('assets/images/hero_bg.png');">
+      <div class="container cta-container reveal">
+        <h2 class="cta-title">Ready to Realize Your Structural Plans?</h2>
+        <p class="cta-desc">Speak to our civil estimators today. We provide full line-item bills of quantities and structural planning audits at zero initial cost.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary modal-trigger" data-modal="quote-modal">Get Free Quote</button>
+          <a href="tel:+15551234567" class="btn btn-outline-yellow">
+            <svg fill="currentColor" viewBox="0 0 24 24" class="cta-btn-icon"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Speak to Estimator
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="contact-section py-large">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-tagline">STAY IN TOUCH</span>
+          <h2 class="section-title">Let's Discuss Your Construction Requirements</h2>
+          <p class="section-subtitle">Reach out to our offices in Austin or request an estimator visit your construction site.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left side: Contact details -->
+          <div class="contact-info-panel reveal">
+            <h3 class="panel-title">Headquarters Office</h3>
+            
+            <div class="contact-info-list">
+              <div class="info-block">
+                <span class="block-icon">📍</span>
+                <div class="block-text">
+                  <h4>Office Address</h4>
+                  <p>7800 Congress Avenue, Suite 450,<br>Austin, Texas, 78701</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="block-icon">✉️</span>
+                <div class="block-text">
+                  <h4>Email Correspondence</h4>
+                  <p><a href="mailto:info@apexbuild.com">info@apexbuild.com</a><br><a href="mailto:estimating@apexbuild.com">estimating@apexbuild.com</a></p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="block-icon">📞</span>
+                <div class="block-text">
+                  <h4>Phone Numbers</h4>
+                  <p>Main: +1 (555) 123-4567<br>Site Audits: +1 (555) 123-4568</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <span class="block-icon">⏰</span>
+                <div class="block-text">
+                  <h4>Office Hours</h4>
+                  <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM (Sunday Closed)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Action buttons -->
+            <div class="quick-action-buttons">
+              <a href="tel:+15551234567" class="btn btn-action-call">
+                <svg fill="currentColor" viewBox="0 0 24 24" class="action-icon"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                Call Now
+              </a>
+              <a href="https://wa.me/15551234567?text=Hi%20Apex%20Build%2C%20I%20would%20like%20to%20request%20a%20construction%20cost%20estimation." target="_blank" rel="noopener" class="btn btn-action-whatsapp">
+                <svg fill="currentColor" viewBox="0 0 24 24" class="action-icon"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.335 4.978L2 22l5.188-1.358a9.927 9.927 0 0 0 4.821 1.246h.004c5.505 0 9.988-4.478 9.989-9.985a9.94 9.94 0 0 0-2.927-7.06A9.929 9.929 0 0 0 12.012 2zm5.727 14.078c-.247.697-1.246 1.272-1.715 1.326-.469.053-.94.272-3.003-.544-2.483-.98-4.088-3.5-4.212-3.666-.124-.165-1.002-1.328-1.002-2.53 0-1.201.623-1.792.846-2.03.223-.238.494-.298.658-.298.165 0 .33.003.473.009.149.006.347-.056.544.421.198.483.679 1.657.739 1.779.06.121.099.263.02.421-.079.158-.12.26-.24.398-.12.138-.25.308-.358.411-.118.113-.243.238-.105.474.137.235.612 1.009 1.312 1.632.9.8 1.658 1.047 1.896 1.166.237.118.375.099.513-.059.138-.158.594-.693.752-.927.158-.235.317-.198.535-.118.217.079 1.378.65 1.616.769.237.118.396.178.455.277.06.099.06.574-.188 1.271z"/></svg>
+                WhatsApp Chat
+              </a>
+            </div>
+          </div>
+
+          <!-- Right side: Contact form -->
+          <div class="contact-form-panel reveal" data-delay="200">
+            <h3 class="panel-title">Request Cost Estimation</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <div class="form-row">
+                <div class="input-group">
+                  <input type="text" id="contact-name" name="name" required placeholder=" " aria-required="true">
+                  <label for="contact-name">Full Name *</label>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+                
+                <div class="input-group">
+                  <input type="email" id="contact-email" name="email" required placeholder=" " aria-required="true">
+                  <label for="contact-email">Email Address *</label>
+                  <span class="error-msg" id="email-error">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="input-group">
+                  <input type="tel" id="contact-phone" name="phone" required placeholder=" " aria-required="true">
+                  <label for="contact-phone">Phone Number *</label>
+                  <span class="error-msg" id="phone-error">Please enter a valid phone number</span>
+                </div>
+
+                <div class="input-group">
+                  <select id="contact-project" name="project" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="residential">Residential Construction</option>
+                    <option value="commercial">Commercial Buildings</option>
+                    <option value="industrial">Industrial Facilities</option>
+                    <option value="interior">Interior Design</option>
+                    <option value="renovation">Renovation &amp; Restoration</option>
+                    <option value="architecture">Architecture Planning</option>
+                    <option value="civil">Civil Engineering Works</option>
+                    <option value="management">Full Project Management</option>
+                  </select>
+                  <label for="contact-project" class="select-label">Project Type *</label>
+                  <span class="error-msg" id="project-error">Please select a project type</span>
+                </div>
+              </div>
+
+              <div class="input-group full-width">
+                <textarea id="contact-message" name="message" rows="5" required placeholder=" " aria-required="true"></textarea>
+                <label for="contact-message">Message Details *</label>
+                <span class="error-msg" id="message-error">Please describe your project requirements</span>
+              </div>
+
+              <div class="form-submit-wrapper">
+                <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                  <span>Submit Inquiry</span>
+                  <div class="spinner" id="form-spinner"></div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Google Maps Styled Dark Card Placeholder -->
+        <div class="map-container-card reveal mt-medium">
+          <div class="map-card-header">
+            <span class="map-icon">🗺️</span>
+            <h4>Apex Build Site Inspector Zone (Austin HQ Area)</h4>
+          </div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.8258284795493!2d-97.74548488487618!3d30.27412158179781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b508f7b764c9%3A0xc3f628cb39d2c67!2sCongress%20Ave.%2C%20Austin%2C%20TX!5e0!3m2!1sen!2sus!4v1626992928373!5m2!1sen!2sus" 
+            width="100%" 
+            height="400" 
+            style="border:0; filter: grayscale(1) invert(0.9) contrast(1.1);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            aria-label="Map showing Apex Build head office location in downtown Austin">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. FOOTER SECTION -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Branding -->
+      <div class="footer-col branding-col">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="160" height="38">
+          <g transform="translate(10, 10)">
+            <path d="M 40 100 L 70 20 L 100 100" stroke="#FFC107" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <path d="M 15 100 L 55 20 L 75 60" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+            <line x1="45" y1="80" x2="95" y2="80" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+            <line x1="55" y1="60" x2="85" y2="60" stroke="#FFC107" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <text x="130" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" letter-spacing="2">APEX</text>
+          <text x="250" y="65" font-family="'Outfit', sans-serif" font-size="38" font-weight="900" fill="#FFC107" letter-spacing="2">BUILD</text>
+        </svg>
+        <p class="footer-text">Apex Build is a premier tier-1 general contractor designing and engineering luxury skyscrapers, estates, and civil systems under strict safety standards.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-circle" aria-label="Facebook Link">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+          </a>
+          <a href="#" class="social-circle" aria-label="LinkedIn Link">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.67c0-.25.015-.5.09-.67a1.39 1.39 0 0 1 1.27-.93c.77 0 1.08.59 1.08 1.45v4.82h2.8M6.5 8.44a1.66 1.66 0 1 0 0-3.3 1.66 1.66 0 0 0 0 3.3m1.4 10.06v-8.37H5.1v8.37h2.8z"/></svg>
+          </a>
+          <a href="#" class="social-circle" aria-label="Instagram Link">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="footer-social-icon"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6m8.4 2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col links-col">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services -->
+      <div class="footer-col links-col">
+        <h4 class="footer-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Residential Build</a></li>
+          <li><a href="#services">Commercial Structures</a></li>
+          <li><a href="#services">Industrial Units</a></li>
+          <li><a href="#services">Architecture Drafting</a></li>
+          <li><a href="#services">Structural Renovation</a></li>
+          <li><a href="#services">Civil Engineering</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact details -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-title">Contact Info</h4>
+        <p class="contact-detail">📍 7800 Congress Ave, Austin, TX</p>
+        <p class="contact-detail">📞 Main: +1 (555) 123-4567</p>
+        <p class="contact-detail">✉️ info@apexbuild.com</p>
+        <p class="contact-detail">⏰ Mon - Sat: 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="sub-footer">
+      <div class="container sub-footer-container">
+        <p class="copyright-text">&copy; 2026 Apex Build. All Rights Reserved.</p>
+        <div class="sub-footer-links">
+          <a href="#" class="sub-link">Privacy Policy</a>
+          <a href="#" class="sub-link">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top of the page">
+    <svg class="progress-ring" width="50" height="50">
+      <circle class="progress-ring-circle" stroke="#FFC107" stroke-width="3" fill="transparent" r="22" cx="25" cy="25"/>
+    </svg>
+    <span class="arrow-up">↑</span>
+  </button>
+
+  <!-- Project Lightbox Dialog Modal -->
+  <div id="project-lightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-labelledby="lightbox-title">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-container reveal-scale">
+      <button class="lightbox-close" aria-label="Close details dialog">&times;</button>
+      <div class="lightbox-grid">
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        </div>
+        <div class="lightbox-details-wrapper">
+          <span id="lightbox-tag" class="detail-tag">Houses</span>
+          <h3 id="lightbox-title" class="detail-project-title">Project Name</h3>
+          
+          <div class="detail-specs-grid">
+            <div class="spec-item">
+              <strong>Client:</strong>
+              <span id="lightbox-client">Client Name</span>
+            </div>
+            <div class="spec-item">
+              <strong>Location:</strong>
+              <span id="lightbox-location">Austin, Texas</span>
+            </div>
+            <div class="spec-item">
+              <strong>Value / Budget:</strong>
+              <span id="lightbox-budget">$2.5 Million</span>
+            </div>
+            <div class="spec-item">
+              <strong>Timeline:</strong>
+              <span id="lightbox-date">Completed 2025</span>
+            </div>
+          </div>
+
+          <div class="detail-desc-block">
+            <h4>Project Summary</h4>
+            <p id="lightbox-desc">Detailed project description...</p>
+          </div>
+          
+          <button class="btn btn-primary modal-trigger" data-modal="quote-modal">Request Quote For Similar Project</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Free Quote Dialog Modal -->
+  <div id="quote-modal" class="quote-modal-container" aria-hidden="true" role="dialog" aria-labelledby="quote-modal-title">
+    <div class="quote-modal-overlay"></div>
+    <div class="quote-modal-content reveal-scale">
+      <button class="quote-modal-close" aria-label="Close quote modal">&times;</button>
+      <h3 id="quote-modal-title" class="quote-modal-header">Get Your Free Construction Quote</h3>
+      <p class="quote-modal-subtitle">Provide details about your project to schedule an estimator site inspection.</p>
+      
+      <form id="quote-form" class="quote-form" novalidate>
+        <div class="input-group">
+          <input type="text" id="quote-name" name="name" required placeholder=" ">
+          <label for="quote-name">Full Name *</label>
+          <span class="error-msg" id="qname-error">Name is required</span>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="quote-email" name="email" required placeholder=" ">
+          <label for="quote-email">Email Address *</label>
+          <span class="error-msg" id="qemail-error">Enter a valid email</span>
+        </div>
+
+        <div class="input-group">
+          <input type="tel" id="quote-phone" name="phone" required placeholder=" ">
+          <label for="quote-phone">Phone Number *</label>
+          <span class="error-msg" id="qphone-error">Enter a valid phone number</span>
+        </div>
+
+        <div class="input-group">
+          <select id="quote-project" name="project" required>
+            <option value="" disabled selected hidden></option>
+            <option value="residential">Residential Construction</option>
+            <option value="commercial">Commercial Buildings</option>
+            <option value="industrial">Industrial Facilities</option>
+            <option value="interior">Interior Design &amp; Fitout</option>
+            <option value="renovation">Renovation &amp; Restoration</option>
+            <option value="architecture">Architecture Planning</option>
+            <option value="civil">Civil Engineering Works</option>
+            <option value="management">Full Project Management</option>
+          </select>
+          <label for="quote-project" class="select-label">Project Type *</label>
+          <span class="error-msg" id="qproject-error">Select project type</span>
+        </div>
+
+        <div class="input-group">
+          <textarea id="quote-message" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="quote-message">Describe Scope &amp; Site Location *</label>
+          <span class="error-msg" id="qmessage-error">Description is required</span>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btn-submit-quote" style="width: 100%;">
+          <span>Submit Request</span>
+          <div class="spinner" id="quote-spinner"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-success" class="toast-success-card" aria-live="polite" role="status">
+    <div class="toast-body">
+      <span class="toast-icon">✓</span>
+      <div class="toast-text-wrapper">
+        <h4>Submission Received!</h4>
+        <p id="toast-msg">Our engineering estimator will contact you within 24 business hours.</p>
+      </div>
+      <button class="toast-close" aria-label="Close notification">&times;</button>
+    </div>
+  </div>
+
+  <!-- Shared Javascript interactions (Inline Javascript) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* 1. Preloader Fade Out */
+      const preloader = document.getElementById('preloader');
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          preloader.classList.add('fade-out');
+        }, 600);
+      });
+      setTimeout(() => {
+        if (!preloader.classList.contains('fade-out')) {
+          preloader.classList.add('fade-out');
+        }
+      }, 3000);
+
+      /* 2. Mobile Menu Toggle & Scroll Lock */
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function openMobileMenu() {
+        menuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenu.classList.add('active');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; 
+      }
+
+      function closeMobileMenu() {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('active');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = ''; 
+      }
+
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          closeMobileMenu();
+        } else {
+          openMobileMenu();
+        }
+      });
+
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          closeMobileMenu();
+        });
+      });
+
+      /* 3. Sticky Header, Scroll Progress & Back-to-Top */
+      const mainHeader = document.getElementById('main-header');
+      const scrollProgressBar = document.getElementById('scroll-progress-bar');
+      const backToTopBtn = document.getElementById('back-to-top');
+      const progressCircle = document.querySelector('.progress-ring-circle');
+      
+      const radius = progressCircle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius; 
+      progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+      progressCircle.style.strokeDashoffset = circumference;
+
+      function updateScrollProgress() {
+        const scrollY = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+        
+        if (scrollY > 50) {
+          mainHeader.classList.add('scrolled');
+        } else {
+          mainHeader.classList.remove('scrolled');
+        }
+
+        if (documentHeight > 0) {
+          const scrollPercent = (scrollY / documentHeight) * 100;
+          scrollProgressBar.style.width = `${scrollPercent}%`;
+
+          if (scrollY > 300) {
+            backToTopBtn.classList.add('active');
+          } else {
+            backToTopBtn.classList.remove('active');
+          }
+
+          const offset = circumference - (scrollPercent / 100) * circumference;
+          progressCircle.style.strokeDashoffset = offset;
+        } else {
+          scrollProgressBar.style.width = '0%';
+          backToTopBtn.classList.remove('active');
+        }
+      }
+
+      window.addEventListener('scroll', updateScrollProgress);
+      updateScrollProgress(); 
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      /* 4. Active Link Highlight (Scrollspy) */
+      const sections = document.querySelectorAll('section[id]');
+      const desktopLinks = document.querySelectorAll('.desktop-nav .nav-link');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -40% 0px', 
+        threshold: 0
+      };
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            
+            desktopLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+
+            mobileLinks.forEach(link => {
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        sectionObserver.observe(section);
+      });
+
+      /* 5. Scroll Reveal Animations */
+      const revealElements = document.querySelectorAll('.reveal');
+
+      const revealObserverOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px', 
+        threshold: 0.1
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const delay = el.getAttribute('data-delay') || 0;
+            
+            if (delay > 0) {
+              setTimeout(() => {
+                el.classList.add('revealed');
+              }, delay);
+            } else {
+              el.classList.add('revealed');
+            }
+            revealObserver.unobserve(el); 
+          }
+        });
+      }, revealObserverOptions);
+
+      revealElements.forEach(el => {
+        revealObserver.observe(el);
+      });
+
+      /* 6. Dynamic Stat Counter Animation */
+      const counters = document.querySelectorAll('.counter');
+      
+      const counterObserverOptions = {
+        root: null,
+        threshold: 0.5 
+      };
+
+      const startCounter = (el) => {
+        const target = parseInt(el.getAttribute('data-target'), 10);
+        const duration = 2000; 
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeProgress = progress * (2 - progress);
+          const currentValue = Math.floor(easeProgress * target);
+          
+          el.textContent = currentValue;
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            el.textContent = target; 
+          }
+        }
+        requestAnimationFrame(updateCounter);
+      };
+
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            startCounter(entry.target);
+            counterObserver.unobserve(entry.target); 
+          }
+        });
+      }, counterObserverOptions);
+
+      counters.forEach(counter => {
+        counterObserver.observe(counter);
+      });
+
+      /* 7. Services Sliding Drawers */
+      const learnMoreButtons = document.querySelectorAll('.learn-more-trigger');
+      const drawerCloseButtons = document.querySelectorAll('.drawer-close');
+
+      learnMoreButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const serviceId = btn.getAttribute('data-service');
+          const drawer = document.getElementById(`drawer-${serviceId}`);
+          if (drawer) {
+            drawer.classList.add('active');
+          }
+        });
+      });
+
+      drawerCloseButtons.forEach(closeBtn => {
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const drawer = closeBtn.parentElement;
+          if (drawer) {
+            drawer.classList.remove('active');
+          }
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        const activeDrawers = document.querySelectorAll('.service-drawer.active');
+        activeDrawers.forEach(drawer => {
+          if (!drawer.contains(e.target) && !e.target.classList.contains('learn-more-trigger')) {
+            drawer.classList.remove('active');
+          }
+        });
+      });
+
+      /* 8. Projects Gallery Filter */
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.projects-grid .project-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterVal = btn.getAttribute('data-filter');
+
+          projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            
+            if (filterVal === 'all' || category === filterVal) {
+              card.classList.remove('hide');
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.95)';
+              card.classList.add('hide');
+            }
+          });
+        });
+      });
+
+      /* 9. Project Lightbox Modal */
+      const lightboxModal = document.getElementById('project-lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTag = document.getElementById('lightbox-tag');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxClient = document.getElementById('lightbox-client');
+      const lightboxLocation = document.getElementById('lightbox-location');
+      const lightboxBudget = document.getElementById('lightbox-budget');
+      const lightboxDate = document.getElementById('lightbox-date');
+      const lightboxDesc = document.getElementById('lightbox-desc');
+      const lightboxClose = lightboxModal.querySelector('.lightbox-close');
+      const lightboxOverlay = lightboxModal.querySelector('.lightbox-overlay');
+
+      function openLightbox(card) {
+        const imgPath = card.querySelector('.project-img').src;
+        const tagText = card.querySelector('.project-tag').textContent;
+        const titleText = card.querySelector('.project-card-title').textContent;
+        
+        const detailNode = card.querySelector('.project-detail-content');
+        const clientText = detailNode.querySelector('.detail-client').textContent;
+        const locationText = detailNode.querySelector('.detail-location').textContent;
+        const budgetText = detailNode.querySelector('.detail-budget').textContent;
+        const dateText = detailNode.querySelector('.detail-date').textContent;
+        const descText = detailNode.querySelector('.detail-description').textContent;
+
+        lightboxImg.src = imgPath;
+        lightboxImg.alt = titleText;
+        lightboxTag.textContent = tagText;
+        lightboxTitle.textContent = titleText;
+        lightboxClient.textContent = clientText;
+        lightboxLocation.textContent = locationText;
+        lightboxBudget.textContent = budgetText;
+        lightboxDate.textContent = dateText;
+        lightboxDesc.textContent = descText;
+
+        lightboxModal.classList.add('active');
+        lightboxModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        lightboxModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      document.getElementById('projects-grid').addEventListener('click', (e) => {
+        const card = e.target.closest('.project-card');
+        if (card) {
+          openLightbox(card);
+        }
+      });
+
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxOverlay.addEventListener('click', closeLightbox);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+          closeLightbox();
+        }
+      });
+
+      /* 10. Get Quote Modal triggers */
+      const quoteModal = document.getElementById('quote-modal');
+      const quoteModalClose = quoteModal.querySelector('.quote-modal-close');
+      const quoteModalOverlay = quoteModal.querySelector('.quote-modal-overlay');
+
+      function openQuoteModal() {
+        quoteModal.classList.add('active');
+        quoteModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeQuoteModal() {
+        quoteModal.classList.remove('active');
+        quoteModal.setAttribute('aria-hidden', 'true');
+        if (!lightboxModal.classList.contains('active')) {
+          document.body.style.overflow = '';
+        }
+      }
+
+      document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.modal-trigger');
+        if (trigger && trigger.getAttribute('data-modal') === 'quote-modal') {
+          if (lightboxModal.classList.contains('active')) {
+            closeLightbox();
+          }
+          openQuoteModal();
+        }
+      });
+
+      quoteModalClose.addEventListener('click', closeQuoteModal);
+      quoteModalOverlay.addEventListener('click', closeQuoteModal);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && quoteModal.classList.contains('active')) {
+          closeQuoteModal();
+        }
+      });
+
+      /* 11. Form Validation & Toast Notifications */
+      const contactForm = document.getElementById('contact-form');
+      const quoteForm = document.getElementById('quote-form');
+      const successToast = document.getElementById('toast-success');
+      const toastClose = successToast.querySelector('.toast-close');
+      const toastMsg = document.getElementById('toast-msg');
+
+      const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      const PHONE_REGEX = /^\+?[0-9\s\-()]{7,20}$/;
+
+      function validateInput(input, validationFn, errorMsgId) {
+        const group = input.closest('.input-group');
+        const value = input.value.trim();
+        const isValid = validationFn(value);
+
+        if (!isValid) {
+          group.classList.add('invalid');
+          return false;
+        } else {
+          group.classList.remove('invalid');
+          return true;
+        }
+      }
+
+      const attachRealTimeValidation = (formInputs) => {
+        formInputs.forEach(input => {
+          input.addEventListener('input', () => {
+            const group = input.closest('.input-group');
+            group.classList.remove('invalid');
+          });
+          input.addEventListener('blur', () => {
+            const value = input.value.trim();
+            if (value === '') {
+              input.closest('.input-group').classList.add('invalid');
+            }
+          });
+        });
+      };
+
+      const contactInputs = contactForm.querySelectorAll('input, textarea, select');
+      const quoteInputs = quoteForm.querySelectorAll('input, textarea, select');
+      
+      attachRealTimeValidation(contactInputs);
+      attachRealTimeValidation(quoteInputs);
+
+      const isNotEmpty = val => val.length > 0;
+      const isValidEmail = val => EMAIL_REGEX.test(val);
+      const isValidPhone = val => PHONE_REGEX.test(val);
+
+      function showToast(message) {
+        toastMsg.textContent = message;
+        successToast.classList.add('active');
+        setTimeout(() => {
+          hideToast();
+        }, 5000);
+      }
+
+      function hideToast() {
+        successToast.classList.remove('active');
+      }
+
+      toastClose.addEventListener('click', hideToast);
+
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('contact-name');
+        const emailInput = document.getElementById('contact-email');
+        const phoneInput = document.getElementById('contact-phone');
+        const projectInput = document.getElementById('contact-project');
+        const msgInput = document.getElementById('contact-message');
+
+        const isNameValid = validateInput(nameInput, isNotEmpty, 'name-error');
+        const isEmailValid = validateInput(emailInput, isValidEmail, 'email-error');
+        const isPhoneValid = validateInput(phoneInput, isValidPhone, 'phone-error');
+        const isProjectValid = validateInput(projectInput, isNotEmpty, 'project-error');
+        const isMsgValid = validateInput(msgInput, isNotEmpty, 'message-error');
+
+        if (isNameValid && isEmailValid && isPhoneValid && isProjectValid && isMsgValid) {
+          const submitBtn = contactForm.querySelector('.btn-submit');
+          submitBtn.classList.add('loading');
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            submitBtn.classList.remove('loading');
+            submitBtn.disabled = false;
+            contactForm.reset();
+            showToast('Your estimating inquiry has been received! An Apex engineer will contact you in 24 hours.');
+          }, 1500);
+        }
+      });
+
+      quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('quote-name');
+        const emailInput = document.getElementById('quote-email');
+        const phoneInput = document.getElementById('quote-phone');
+        const projectInput = document.getElementById('quote-project');
+        const msgInput = document.getElementById('quote-message');
+
+        const isNameValid = validateInput(nameInput, isNotEmpty, 'qname-error');
+        const isEmailValid = validateInput(emailInput, isValidEmail, 'qemail-error');
+        const isPhoneValid = validateInput(phoneInput, isValidPhone, 'qphone-error');
+        const isProjectValid = validateInput(projectInput, isNotEmpty, 'qproject-error');
+        const isMsgValid = validateInput(msgInput, isNotEmpty, 'qmessage-error');
+
+        if (isNameValid && isEmailValid && isPhoneValid && isProjectValid && isMsgValid) {
+          const submitBtn = document.getElementById('btn-submit-quote');
+          submitBtn.classList.add('loading');
+          submitBtn.disabled = true;
+
+          const spinner = document.getElementById('quote-spinner');
+          spinner.style.display = 'inline-block';
+          submitBtn.querySelector('span').style.display = 'none';
+
+          setTimeout(() => {
+            submitBtn.classList.remove('loading');
+            submitBtn.disabled = false;
+            spinner.style.display = 'none';
+            submitBtn.querySelector('span').style.display = 'inline-block';
+
+            quoteForm.reset();
+            closeQuoteModal();
+            showToast('Your quote request is registered! Our estimating officer will reach out with pricing options.');
+          }, 1500);
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
